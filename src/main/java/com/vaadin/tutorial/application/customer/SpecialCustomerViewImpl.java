@@ -6,10 +6,17 @@ import com.vaadin.data.fieldgroup.FieldGroup;
 import com.vaadin.data.util.BeanItem;
 import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
-import com.vaadin.ui.Button.ClickEvent;
 import com.vaadin.ui.CheckBox;
 
+/**
+ * extential view for SpecialCustomer
+ * 
+ * use the same presenter than CustomerViewImpl
+ *
+ */
 public class SpecialCustomerViewImpl extends AbstractCustomerLayout<SpecialCustomer> implements View {
+
+	private static final long serialVersionUID = 1L;
 
 	public static final String VIEW_NAME = "specialcustomer";
 	

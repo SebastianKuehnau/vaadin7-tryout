@@ -1,6 +1,5 @@
 package com.vaadin.tutorial.application;
 
-import java.time.LocalDate;
 import java.time.LocalTime;
 
 import com.vaadin.navigator.View;
@@ -9,7 +8,13 @@ import com.vaadin.ui.Button;
 import com.vaadin.ui.TextField;
 import com.vaadin.ui.VerticalLayout;
 
+/**
+ * differences between readonly- and disabled-textfield
+ *
+ */
 public class ReadOnlyView extends VerticalLayout implements View {
+
+	private static final long serialVersionUID = 1L;
 
 	public static final String VIEW_NAME = "readonly";
 	

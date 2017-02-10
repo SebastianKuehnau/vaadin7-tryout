@@ -21,7 +21,5 @@
     -->
     <!-- <set-configuration-property name="devModeRedirectEnabled" value="true" /> -->
 
-
-
     <inherits name="com.vaadin.DefaultWidgetSet" />
 </module>

@@ -31,19 +31,21 @@ import com.vaadin.ui.VerticalLayout;
 @PreserveOnRefresh
 public class MyUI extends UI {
 
+	private static final long serialVersionUID = 1L;
+
 	final VerticalLayout menuLayout = new VerticalLayout();
 	final HorizontalSplitPanel panel = new HorizontalSplitPanel();
 	
 	@Override
 	protected void init(VaadinRequest vaadinRequest) {
 
+		//create a navigator and register view there
 		Navigator navigator = new Navigator(this, view -> panel.setSecondComponent((Component) view));
 
-		//TODO: create a HelloWorldView
 		navigator.addView(HelloWorldView.VIEW_NAME, new HelloWorldView());
 		menuLayout.addComponent(new Button("default", event-> navigator.navigateTo(HelloWorldView.VIEW_NAME)));
 		
-		//TODO: create a InputView
+		//see the difference between instantiating a View-Object to passing a view type to the navigator below
 		navigator.addView(PreservedView.VIEW_NAME, new PreservedView());
 		menuLayout.addComponent(new Button("preserved", event-> navigator.navigateTo(PreservedView.VIEW_NAME)));
 		
@@ -82,5 +84,7 @@ public class MyUI extends UI {
 	@WebServlet(urlPatterns = "/*", name = "MyUIServlet", asyncSupported = true)
 	@VaadinServletConfiguration(ui = MyUI.class, productionMode = false)
 	public static class MyUIServlet extends VaadinServlet {
+
+		private static final long serialVersionUID = 1L;
 	}
 }

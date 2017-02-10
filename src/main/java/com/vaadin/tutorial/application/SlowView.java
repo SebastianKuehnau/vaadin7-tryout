@@ -2,15 +2,19 @@ package com.vaadin.tutorial.application;
 
 import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
-import com.vaadin.ui.Component;
 import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.Label;
 import com.vaadin.ui.Layout;
-import com.vaadin.ui.Panel;
 import com.vaadin.ui.VerticalLayout;
 
+/**
+ * slow view with many layouts leads to a very slow view
+ *
+ */
 public class SlowView extends VerticalLayout implements View {
-
+	
+	private static final long serialVersionUID = 1L;
+	
 	public final static String VIEW_NAME = "slowView" ;
 	
 	public SlowView() {

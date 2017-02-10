@@ -3,14 +3,19 @@ package com.vaadin.tutorial.application;
 import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
 import com.vaadin.shared.ui.label.ContentMode;
-import com.vaadin.ui.Component;
 import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.Label;
 import com.vaadin.ui.Layout;
-import com.vaadin.ui.Panel;
 import com.vaadin.ui.VerticalLayout;
 
+
+/**
+ * reduce the number of layouts leads to a faster view
+ *
+ */
 public class FastView extends VerticalLayout implements View {
+
+	private static final long serialVersionUID = 1L;
 
 	public final static String VIEW_NAME = "fastView" ;
 	

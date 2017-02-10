@@ -1,8 +1,11 @@
 package com.vaadin.tutorial.application.customer;
 
+/**
+ * extention of customer class
+ *
+ */
 public class SpecialCustomer extends Customer {
 
-	
 	Boolean old = true ;
 
 	public Boolean getOld() {

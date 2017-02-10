@@ -1,7 +1,10 @@
 package com.vaadin.tutorial.application.customer;
 
-import com.vaadin.navigator.View;
-
+/**
+ * interface for the customer view
+ * 
+ * needs to be implemented in CustomerViewImpl and SpecialCustomerViewImpl
+ */
 public interface CustomerView {
 
 	void showNotification(String string);

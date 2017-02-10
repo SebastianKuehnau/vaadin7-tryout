@@ -6,12 +6,17 @@ import com.vaadin.data.fieldgroup.FieldGroup;
 import com.vaadin.data.util.BeanItem;
 import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
-import com.vaadin.ui.Button.ClickEvent;
-import com.vaadin.ui.Notification;
-import com.vaadin.ui.Notification.Type;
 
+/**
+ * Implementation of customer view
+ * 
+ * see how the view interacts with the presenter
+ *
+ */
 public class CustomerViewImpl extends AbstractCustomerLayout<Customer> implements View {
 		
+	private static final long serialVersionUID = 1L;
+	
 	public static final String VIEW_NAME = "customer";
 	
 	public CustomerViewImpl() {

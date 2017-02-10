@@ -2,6 +2,11 @@ package com.vaadin.tutorial.application.customer;
 
 import java.util.Date;
 
+
+/**
+ * example bean
+ *
+ */
 public class Customer {
 
 	private String name;

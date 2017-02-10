@@ -5,7 +5,13 @@ import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
 import com.vaadin.ui.TextField;
 import com.vaadin.ui.VerticalLayout;
 
+/**
+ * example view with push feature of Vaadin
+ *
+ */
 public class PushView extends VerticalLayout implements View {
+
+	private static final long serialVersionUID = 1L;
 
 	public static final String VIEW_NAME = "push";
 	

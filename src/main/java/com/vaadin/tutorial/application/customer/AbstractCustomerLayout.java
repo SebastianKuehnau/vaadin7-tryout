@@ -2,14 +2,19 @@ package com.vaadin.tutorial.application.customer;
 
 import com.vaadin.ui.Button;
 import com.vaadin.ui.Notification;
-import com.vaadin.ui.Button.ClickListener;
 import com.vaadin.ui.Notification.Type;
 import com.vaadin.ui.PopupDateField;
 import com.vaadin.ui.TextField;
 import com.vaadin.ui.VerticalLayout;
 
+/**
+ * abstract class for the customer views
+ * 
+ */
 public abstract class AbstractCustomerLayout<T extends Customer> extends VerticalLayout implements CustomerView {
-	
+
+	private static final long serialVersionUID = 1L;
+
 	CustomerPresenter presenter = new CustomerPresenter(this) ;
 
 	TextField name = new TextField();
